@@ -1,13 +1,16 @@
 def nil_array(number)
   # return an array containing `nil` the given number of times
+  return Array.new(number)
 end
 
 def first_element(array)
   # return the first element of the array
+  return array.first
 end
 
 def third_element(array)
   # return the third element of the array
+  return array[2]
 end
 
 def last_three_elements(array)
