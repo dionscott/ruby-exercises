@@ -38,8 +38,13 @@ end
 # return value: the character's ordinal number
 # explicit return value: 'Input Error' if character's length does not equal 1
 # hint: use String#ord
-
-
+def ascii_code(string)
+    if (string.length > 1) || (string.length < 1)
+        return 'Input Error'
+    else
+        string.ord
+    end
+end
 # method name: #pet_pun
 # parameter: animal (a string)
 # return value: nil
