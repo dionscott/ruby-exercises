@@ -36,8 +36,10 @@ end
 
 def favorite_items(favorite_list)
   # return the values of favorite_list
+  favorite_list.values
 end
 
 def merge_favorites(original_list, additional_list)
   # merge the two hashes: original_list and additional_list
+  original_list.merge(additional_list)
 end
