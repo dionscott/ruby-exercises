@@ -1,3 +1,4 @@
+require 'pry-byebug'
 # First, we're going to practice reading the Stack Trace
 # Don't look at this method prior to running the test
 # Type 'rspec' into the terminal to run Rspec
@@ -37,11 +38,11 @@ end
 
 def isogram?(string)
   original_length = string.length
-  string_array = string.downcase.split
+  string_array = string.downcase.split("")
+  # binding.pry
   unique_length = string_array.uniq.length
   original_length == unique_length
 end
-
 # Can you guess what's next?
 # That's right! The final exercise from the lesson, which we'll debug with pry-byebug
 # Try to avoid looking at the problem too much, let's rely on pry to fix it
